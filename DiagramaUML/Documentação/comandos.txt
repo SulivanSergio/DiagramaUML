@@ -1,0 +1,12 @@
+all				-> mostra as classes
+allcol				-> mostra as classes em colunas
+classe nomeDaClasse		-> mostra a classe encontrada
+ref nomeDaClasse		-> todas as referencias da classe
+var nomeDaClasse		-> variaveis da classe
+met nomeDaClasse		-> metodos da classe
+vm nomeDaClasse			-> variaveis e metodos da Classe
+cd nomeDaPasta\			-> troca caminho da varredura
+reset				-> recarrega a pasta
+help				-> mostra os comandos
+refi nomeDaClasse		-> compara para ver se tem instancias iguais ao nome classe
+refm nomeDaClasse		-> todas as referencias da classe em todas as classes
