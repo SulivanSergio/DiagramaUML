@@ -1,4 +1,5 @@
 ﻿using DiagramaUML.Scripts.ErrosDebug;
+using DiagramaUML.Scripts.Graph;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -387,6 +388,8 @@ namespace DiagramaUML.Scripts.Varredura
             Console.ResetColor();
             Console.WriteLine();
         }
+
+        
     }
     
 }
