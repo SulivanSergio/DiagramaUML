@@ -22,8 +22,8 @@ namespace DiagramaUML.Scripts.Varredura
         public BuscaArquivos()
         {
             Console.WriteLine("Digite o comando 'help' descobrir os comandos");
-            //diretorioProjeto = @"D:\Documentos\Estudos Aleatorios\DiagramaUML\PastaDeBusca\";
-            //LoddingFiles();
+            diretorioProjeto = @"D:\Documentos\Estudos Aleatorios\Diagrama Uml estilo Git\PastaDeBusca\";
+            LoddingFiles();
         }
         public void LoddingFiles()
         {
@@ -359,15 +359,16 @@ namespace DiagramaUML.Scripts.Varredura
                         {
                             if (metodoSimbolo.ContainingType.Name == nome)
                             {
-                                //var linhaInfo = BuscaClasseNode(nome).GetLineSpan(invocacao.Span);
-                                //int numeroLinha = linhaInfo.StartLinePosition.Line + 1;
-
+                                
+                                var linhaInfo = tree.GetLineSpan(invocacao.Span);
+                                int numeroLinha = linhaInfo.StartLinePosition.Line + 1;                            
+                                                                
                                 Console.ForegroundColor = ConsoleColor.Green;
                                 Console.Write($" -> ");
                                 Console.ResetColor();
                                 Console.Write($"Chama:");
-                                //Console.ForegroundColor = ConsoleColor.Yellow;
-                                //Console.Write($" {numeroLinha}");
+                                Console.ForegroundColor = ConsoleColor.Yellow;
+                                Console.Write($" {numeroLinha}");
                                 Console.ForegroundColor = ConsoleColor.Magenta;
                                 Console.Write($" {cls.Identifier.Text}");
                                 Console.ForegroundColor = ConsoleColor.Green;
